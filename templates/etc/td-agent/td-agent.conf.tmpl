@@ -39,7 +39,7 @@
   buffer_path /var/log/google-fluentd/buffers
   # Set the chunk limit conservatively to avoid exceeding the recommended
   # chunk size of 10MB per write request. The API request size can be a few
-  # times biggers than the raw log size.
+  # times bigger than the raw log size.
   buffer_chunk_limit 512KB
   # Flush logs every 5 seconds, even if the buffer is not full.
   flush_interval 5s
