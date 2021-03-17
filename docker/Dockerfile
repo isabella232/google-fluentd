@@ -27,7 +27,7 @@ RUN apt-get update \
     # If any additional gems need to be installed, it should happen before the
     # image cleanup.
     && /opt/google-fluentd/embedded/bin/gem uninstall -aqI google-protobuf \
-    && /opt/google-fluentd/embedded/bin/gem install google-protobuf -v 3.15.0 \
+    && /opt/google-fluentd/embedded/bin/gem install google-protobuf -v 3.15.6 \
     # ==> INSTALL_ADDITIONAL_GEMS_HERE_IF_NEEDED <==
     # Clean up to reduce image size.
     && apt-get purge -y \
